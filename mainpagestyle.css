@@ -355,6 +355,7 @@ footer{
     justify-content: center;
 }
 .our-benefits{
+    padding-top:20px;
     display: grid;
     grid-template-columns: repeat(4,300px);
     grid-template-rows: 225px;
@@ -1124,10 +1125,6 @@ footer{
         grid-column-gap: 50px;
     }
     .about-us-container{
-        padding-left:30px;
-        padding-right:0px;
-        padding-bottom:0px;
-        padding-top: 30px;
         grid-template-columns: repeat(5,0.8fr);
         grid-template-rows: repeat(5,70px);
     }
@@ -1190,14 +1187,6 @@ footer{
     #maingrid-catalogue{
         grid-template-columns: 125px 1fr;
         grid-template-rows:2fr 1190px 60px;
-    }
-    .about-us-container{
-        padding-left:20px;
-        padding-right:0px;
-        padding-bottom:0px;
-        padding-top: 20px;
-        grid-template-columns: repeat(5,0.8fr);
-        grid-template-rows: repeat(5,70px);
     }
     .catalogue-list button{
         font-size:14px;
