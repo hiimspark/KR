@@ -1163,6 +1163,9 @@ footer{
     
 }
 @media (max-width:570px){
+    .central-images{
+        grid-template-rows: 100px 100px 175px;
+    }
     .main-heading{
         padding:40px 10px 5px 10px;
     .i-changeimg{
