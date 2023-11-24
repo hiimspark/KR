@@ -1125,7 +1125,6 @@ footer{
         grid-column-gap: 50px;
     }
     .about-us-container{
-        grid-template-columns: repeat(5,0.8fr);
         grid-template-rows: repeat(5,70px);
     }
     .about-us-block p{
