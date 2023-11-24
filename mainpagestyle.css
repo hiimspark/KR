@@ -1139,10 +1139,10 @@ footer{
     }
     #maingrid-catalogue{
         grid-template-columns: 0.7fr 1.3fr;
-        grid-template-rows:2fr 1190px 50px;
+        grid-template-rows:2fr 1190px 60px;
     }
     #maingrid-item{
-        grid-template-rows:1500px 1190px 50px;
+        grid-template-rows:1500px 1190px 60px;
     }
     .cart-item{
         width:95%;
@@ -1189,7 +1189,7 @@ footer{
 @media (max-width:518px){
     #maingrid-catalogue{
         grid-template-columns: 125px 1fr;
-        grid-template-rows:2fr 1190px 50px;
+        grid-template-rows:2fr 1190px 60px;
     }
     .catalogue-list button{
         font-size:14px;
