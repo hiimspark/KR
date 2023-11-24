@@ -1131,7 +1131,7 @@ footer{
         font-size:10px;
     }
     #maingrid{
-        grid-template-rows:2fr 1190px 50px;
+        grid-template-rows:2fr 1190px 60px;
     }
     #maingrid-catalogue{
         grid-template-columns: 0.7fr 1.3fr;
