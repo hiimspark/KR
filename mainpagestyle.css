@@ -1175,11 +1175,6 @@ footer{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 100px 150px;
     }
-    .popular-catalogue{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,200px);
-        grid-row-gap: 20px;
-    }
     #maingrid{
         padding-top:60px;
     }
@@ -1188,6 +1183,11 @@ footer{
     }
 }
 @media (max-width:518px){
+    .popular-catalogue{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,200px);
+        grid-row-gap: 20px;
+    }
     #maingrid-catalogue{
         grid-template-columns: 125px 1fr;
         grid-template-rows:2fr 1190px 60px;
