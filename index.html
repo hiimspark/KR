@@ -1,0 +1,202 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Мебельный магазин</title>
+        <link href="images/favicon.png" rel="icon">
+        <link rel="stylesheet" href="mainpagestyle.css">
+        <script src="script.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@500&family=Mooli&display=swap');
+        </style>
+    </head>
+    <body class="body">
+        <header class="header">
+        <a href="index.html" class="logo"><img src="images/favicon.png" width="30px" height="30px"><b>GreenHome</b></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="aboutus.html">О нас</a></li>
+            <li><a href="catalogue.html">Каталог</a>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+        </header>
+        <main id="maingrid">
+            <div class="mainarea">
+                <div class="centered-container">
+                    <div class="central-images">
+                        <img class="central-image big-image" src="images/banner.jpg"/>
+                        <img class="central-image small-image si-1" src="images/banner1.webp"/>
+                        <img class="central-image small-image si-2" src="images/banner2.webp"/>
+                    </div>
+                </div>
+                <div class="centered-container">
+                    <div class="our-benefits">
+                        <div class="benefit-block">
+                            <div class="benefit-image"><img style="position:relative;" src="images/benefit-1.png" width="75" height="75"></div>
+                            <div class="benefit-text"><p>Обширный каталог товаров!</p></div>
+                        </div>
+                        <div class="benefit-block">
+                            <div class="benefit-image"><img style="position:relative;" src="images/delivery.png" width="65" height="65"></div>
+                            <div class="benefit-text"><p>Быстрая доставка на дом по всей Москве!</p></div>
+                        </div>
+                        <div class="benefit-block">
+                            <div class="benefit-image"><img style="position:relative;" src="images/benefit-3.png" width="75" height="75"></div>
+                            <div class="benefit-text"><p>Удобный сервис покупки товаров!</p></div>
+                        </div>
+                        <div class="benefit-block">
+                            <div class="benefit-image"><img style="position:relative;" src="images/benefit-4.png" width="55" height="55"></div>
+                            <div class="benefit-text"><p>Вся наша мебель сделана полностью из экологичных материалов!</p></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="main-heading">Популярные категории</h2>
+                <div class="centered-container">
+                    <div class="popular-catalogue">
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                            <img style="object-fit: cover;" src="images/bed.png">
+                            <p>Кровати и матрасы</p>
+                        </a>
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                            <img style="object-fit: cover;" src="images/couch.png">
+                            <p>Диваны и кресла</p>
+                        </a>
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                            <img style="object-fit: cover;" src="images/cabinet.png">
+                            <div class="benefit-text"><p>Шкафы и стеллажи</p></div>
+                        </a>
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                           <img style="object-fit: cover;" src="images/kitchen.png">
+                            <div class="benefit-text"><p>Кухонные гарнитуры</p></div>
+                        </a>
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                            <img style="object-fit: cover;" src="images/table.png">
+                            <div class="benefit-text"><p>Столы и стулья</p></div>
+                        </a>
+                        <a class="popular-catalogue-block" href="catalogue.html">
+                            <img style="object-fit: cover;" src="images/decor.png">
+                            <div class="benefit-text"><p>Декор для дома</p></div>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="main-heading">Мы рекомендуем</h2>
+                <div class="centered-container">
+                    <div class="catalogue-grid-items" style="margin-top:-50px;grid-template-rows: repeat(2,275px);">
+                        <div class="catalogue-item">
+                            <a href="couch-item.html"><img class="img" src="images/couches/couch1.png"></a>
+                            <div style="margin-top:10px;"><p class="price">22999</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Угловой диван-кровать Крит с универсальным углом</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                        <div class="catalogue-item">
+                            <a href="bed-item.html"><img  class="img" src="images/beds/bed1.png"></a>
+                            <div style="margin-top:10px;"><p class="price">12999</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Кровать без подъемного механизма Осака</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                        <div class="catalogue-item">
+                            <a href="couch-item3.html"><img class="img" src="images/couches/couch3.png"></a>
+                            <div style="margin-top:10px;"><p class="price">37999</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Диван-кровать Сату</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                        <div class="catalogue-item">
+                            <a href="couch-item2.html"><img class="img" src="images/couches/couch4.png"></a>
+                            <div style="margin-top:10px;"><p class="price">40599</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Диван-кровать Венти</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                        <div class="catalogue-item">
+                            <a href="bed-item2.html"><img class="img" src="images/beds/bed2.png"></a>
+                            <div style="margin-top:10px;"><p class="price">33499</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Кровать с подъемным механизмом Орион</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                        <div class="catalogue-item">
+                            <a href="bed-item3.html"><img class="img" src="images/beds/bed3.png"></a>
+                            <div style="margin-top:10px;"><p class="price">16899</p><p class="money-symbol">₽</p></div>
+                            <p class="title">Каркас кровати Бино</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="main-heading">Выгодные предложения</h2>
+                <div class="centered-container">
+                    <div class="great-deals">
+                        <div class="deal-block sdb1">
+                            <img src="images/banner1.webp"/>
+                        </div>
+                        <div class="deal-block sdb2">
+                            <img src="images/banner2.webp"/>
+                        </div>
+                        <div class="deal-block sdb3">
+                            <img src="images/banner3.jpeg"/>
+                        </div>
+                        <div class="deal-block big-db">
+                            <img src="images/greatdeal-banner.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="main-script.js"></script>
+                <footer id="about">
+                    <div class="footer-container">
+                        <div class="footer-element footer-aboutus">
+                            <h2>О нас</h2>
+                            <p>Мебельный магазин предлагает широкий ассортимент продукции для дома и офиса: от столов и стульев до шкафов и диванов.
+                                Здесь каждый может найти варианты на свой вкус, будь то классический стиль или современный дизайн.</p>
+                            <ul class="footer-buttons">
+                                <li><div class="socialbutton vk"><img style="z-index:1; position:relative;" src="images/vk.png" width="35" height="35"></div></li>
+                                <li><div class="socialbutton yt"><img style="z-index:1; position:relative;" src="images/yt.png" width="35" height="25"></div></li>
+                                <li><div class="socialbutton rd"><img style="z-index:1; position:relative;" src="images/rd.png" width="35" height="35"></div></li>
+                            </ul> 
+                                    
+                        </div>
+                        <div class="footer-element footer-menu">
+                            <h2>Ссылки-меню</h2>
+                            <ul>
+                                <li><a href="index.html">Главная страница</a></li>
+                                <li><a href="aboutus.html">О нас</a></li>
+                                <li><a href="catalogue.html">Каталог</a>
+                                <li><a href="cart.html">Корзина</a></li>    
+                            </ul>
+                        </div>
+                        <div class="footer-element footer-menu">
+                            <h2>Каталог</h2>
+                            <ul>
+                                <li><a href="catalogue.html">Диваны и кресла</a></li>
+                                <li><a href="catalogue.html">Кровати и матрасы</a></li>
+                                <li><a href="catalogue.html">Шкафы и стеллажи</a></l>
+                                <li><a href="catalogue.html">Тумбы и комоды</a></li>
+                                <li><a href="catalogue.html">Сад и дача</a></li>
+                                <li><a href="catalogue.html">Мебель для офиса</a></li>
+                                <li><a href="catalogue.html">Кухонные гарнитуры</a></li>
+                                <li><a href="catalogue.html">Столы и стулья</a></li>
+                                <li><a href="catalogue.html">Ковры</a></li>
+                                <li><a href="catalogue.html">Освещение</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-element footer-contacts">
+                            <h2>Контакты</h2>
+                            <ul class="contacts-info">
+                                <li>
+                                    <img src="images/pin.png" width="25" height="25">
+                                    <p>г.Москва, <br>проспект Вернадского,<br> д. 78</p>
+                                </li>
+                                <li>
+                                    <img src="images/phone.png" width="25" height="25">
+                                    <p><a href="tel:+79101715517">+7(910)171-55-17</a></p>
+                                </li>
+                                <li>
+                                    <img src="images/email.png" width="25" height="25">
+                                    <p><a href="mailto:mssp@yandex.ru">mssp@yandex.ru</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer-copyright"><p>© Спиридонов Матвей Сергеевич [ИКБО-30-22]</p></div>
+        </main>
+    </body>
+</html>

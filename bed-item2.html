@@ -1,0 +1,139 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Мебельный магазин</title>
+        <link href="images/favicon.png" rel="icon"><!--фавикон-->
+        <link rel="stylesheet" href="mainpagestyle.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@500&family=Mooli&display=swap');
+        </style>
+    </head>
+    <body class="body">
+        <header class="header">
+        <a href="index.html" class="logo"><img src="images/favicon.png" width="30px" height="30px"><b>GreenHome</b></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="aboutus.html">О нас</a></li>
+            <li><a href="catalogue.html">Каталог</a>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+        </header>
+        </header>
+        <main id="maingrid-item">
+            <div class="mainarea">
+                <div class="centered-container">
+                    <div class="item-grid">
+                        <h1 class="i-title" id="i-title">Кровать с подъемным механизмом Орион</h1>
+                            <div class="i-changeimg">
+                                <div class="i-changeimg-item" id="ici1">
+                                    <button type="button" onclick="changeImg(1)">
+                                        <img src="images/items/bed2-1.png" id="iciimg1">
+                                    </button>
+                                </div>
+                                <div class="i-changeimg-item" id="ici2">
+                                    <button type="button" onclick="changeImg(2)">
+                                        <img src="images/items/bed2-2.png" id="iciimg2">
+                                    </button>
+                                </div>
+                                <div class="i-changeimg-item" id="ici3">
+                                    <button type="button" onclick="changeImg(3)">
+                                        <img src="images/items/bed2-3.png" id="iciimg3">
+                                    </button>
+                                </div>
+                                <div class="i-changeimg-item" id="ici4">
+                                    <button type="button" onclick="changeImg(4)">
+                                        <img src="images/items/bed2-4.png" id="iciimg4">
+                                    </button>
+                                </div>
+                            </div>
+                        <div class="i-img">
+                            <img src="images/items/bed2-1.png" id="i-img">
+                        </div>
+                        <img src="images/items/bed2-1.png" id="i-main-img" style="display: none;">
+                        <div class="i-button">
+                            <div style="margin-top:20px; margin-left:-5px;"><p class="i-price">12999</p><p class="i-money-symbol"> ₽</p></div>
+                            <p class="i-fullprice">19 999 ₽</p>
+                            <button onclick="addToCart(this)">В корзину</button>
+                            <p class="i-available">Доступно для самовывоза и доставки</p>
+                        </div>
+                        <div class="i-delivery">
+                            <div class="i-delivery-item">
+                                <img src="images/delivery.png">
+                                <p>Доставка за 1 799 Р</p>
+                            </div>
+                            <div class="i-delivery-item">
+                                <img src="images/takeout.png">
+                                <p>Самовывоз (с 5 складов): Завтра</p>
+                            </div>
+                            <div class="i-delivery-item">
+                                <img src="images/assembly.png">
+                                <p>Услуга сборки за 799 Р</p>
+                            </div>
+                        </div>
+                        <div class="i-desc"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="item-script.js"></script>
+            <footer id="about">
+                <div class="footer-container">
+                    <div class="footer-element footer-aboutus">
+                        <h2>О нас</h2>
+                        <p>Мебельный магазин предлагает широкий ассортимент продукции для дома и офиса: от столов и стульев до шкафов и диванов.
+                            Здесь каждый может найти варианты на свой вкус, будь то классический стиль или современный дизайн.</p>
+                        <ul class="footer-buttons">
+                            <li><div class="socialbutton vk"><img style="z-index:1; position:relative;" src="images/vk.png" width="35" height="35"></div></li>
+                            <li><div class="socialbutton yt"><img style="z-index:1; position:relative;" src="images/yt.png" width="35" height="25"></div></li>
+                            <li><div class="socialbutton rd"><img style="z-index:1; position:relative;" src="images/rd.png" width="35" height="35"></div></li>
+                        </ul> 
+                                
+                    </div>
+                    <div class="footer-element footer-menu">
+                        <h2>Ссылки-меню</h2>
+                        <ul>
+                            <li><a href="index.html">Главная страница</a></li>
+                            <li><a href="aboutus.html">О нас</a></li>
+                            <li><a href="catalogue.html">Каталог</a>
+                            <li><a href="cart.html">Корзина</a></li>    
+                        </ul>
+                    </div>
+                    <div class="footer-element footer-menu">
+                        <h2>Каталог</h2>
+                        <ul>
+                            <li><a href="catalogue.html">Диваны и кресла</a></li>
+                            <li><a href="catalogue.html">Кровати и матрасы</a></li>
+                            <li><a href="catalogue.html">Шкафы и стеллажи</a></l>
+                            <li><a href="catalogue.html">Тумбы и комоды</a></li>
+                            <li><a href="catalogue.html">Сад и дача</a></li>
+                            <li><a href="catalogue.html">Мебель для офиса</a></li>
+                            <li><a href="catalogue.html">Кухонные гарнитуры</a></li>
+                            <li><a href="catalogue.html">Столы и стулья</a></li>
+                            <li><a href="catalogue.html">Ковры</a></li>
+                            <li><a href="catalogue.html">Освещение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-element footer-contacts">
+                        <h2>Контакты</h2>
+                        <ul class="contacts-info">
+                            <li>
+                                <img src="images/pin.png" width="25" height="25">
+                                <p>г.Москва, <br>проспект Вернадского,<br> д. 78</p>
+                            </li>
+                            <li>
+                                <img src="images/phone.png" width="25" height="25">
+                                <p><a href="tel:+79101715517">+7(910)171-55-17</a></p>
+                            </li>
+                            <li>
+                                <img src="images/email.png" width="25" height="25">
+                                <p><a href="mailto:mssp@yandex.ru">mssp@yandex.ru</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-copyright"><p>© Спиридонов Матвей Сергеевич [ИКБО-30-22]</p></div>
+        </section>
+        </main>

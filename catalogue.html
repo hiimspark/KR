@@ -1,0 +1,357 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>Мебельный магазин</title>
+        <link href="images/favicon.png" rel="icon"><!--фавикон-->
+        <link rel="stylesheet" href="mainpagestyle.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@500&family=Mooli&display=swap');
+        </style>
+    </head>
+    <body class="body">
+        <header class="header">
+        <a href="index.html" class="logo"><img src="images/favicon.png" width="30px" height="30px"><b>GreenHome</b></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="aboutus.html">О нас</a></li>
+            <li><a href="catalogue.html">Каталог</a>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+        </header>
+        </header>
+        <main id="maingrid-catalogue">
+            <div class="mainarea">
+                <div id="defaultcatalogue">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Каталог</h1>
+                        <div class="catalogue-grid">
+                            <button onclick="catalogueSwitch('couches')" class="catalogue-block">
+                                <img src="images/couch.png">
+                                <p>Диваны и кресла</p>
+                            </button>
+                            <button onclick="catalogueSwitch('beds')" class="catalogue-block">
+                                <img src="images/bed.png">
+                                <p>Кровати и матрасы</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/cabinet.png">
+                                <p>Шкафы и стеллажи</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/box.png">
+                                <p>Тумбы и комоды</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/decor.png">
+                                <p>Декор для дома</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/kitchen.png">
+                                <p>Кухонные гарнитуры</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/table.png">
+                                <p>Столы и стулья</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/carpet.png">
+                                <p>Ковры</p>
+                            </button>
+                            <button class="catalogue-block">
+                                <img src="images/lights.png">
+                                <p>Освещение</p>
+                            </button>
+                        </div>
+                    </div>
+                <div id="couches">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Диваны и кресла</h1>
+                        <div class="catalogue-grid-items">
+                            <div class="catalogue-item">
+                                <a href="couch-item.html"><img class="img" src="images/couches/couch1.png"></a>
+                                <div style="margin-top:10px;"><p class="price">22999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Угловой диван-кровать Крит с универсальным углом</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a href="couch-item2.html"><img class="img" src="images/couches/couch4.png"></a>
+                                <div style="margin-top:10px;"><p class="price">40599</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Диван-кровать Венти</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a href="couch-item3.html"><img class="img" src="images/couches/couch3.png"></a>
+                                <div style="margin-top:10px;"><p class="price">37999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Диван-кровать Сату</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch2.png"></a>
+                                <div style="margin-top:10px;"><p class="price">53499</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Диван-кровать Валиант</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch5.png"></a>
+                                <div style="margin-top:10px;"><p class="price">10999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Диван-кровать Капитао</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch6.png"></a>
+                                <div style="margin-top:10px;"><p class="price">29899</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кушетка Фурина с подлокотником справа</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch7.png"></a>
+                                <div style="margin-top:10px;"><p class="price">15299</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кресло-кровать Колорадо</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch8.png"></a>
+                                <div style="margin-top:10px;"><p class="price">19499</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кресло Остин</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/couches/couch9.png"></a>
+                                <div style="margin-top:10px;"><p class="price">4999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кресло-пуфик Акуленок</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                <div id="beds">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Кровати и матрасы</h1>
+                        <div class="catalogue-grid-items">
+                            <div class="catalogue-item">
+                                <a href="bed-item.html"><img class="img" src="images/beds/bed1.png"></a>
+                                <div style="margin-top:10px;"><p class="price">12999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать без подъемного механизма Осака</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a href="bed-item2.html"><img class="img" src="images/beds/bed2.png"></a>
+                                <div style="margin-top:10px;"><p class="price">33499</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать с подъемным механизмом Орион</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a href="bed-item3.html"><img class="img" src="images/beds/bed3.png"></a>
+                                <div style="margin-top:10px;"><p class="price">16899</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Каркас кровати Бино</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed4.png"></a>
+                                <div style="margin-top:10px;"><p class="price">20599</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать без подъемного механизма Гео</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed5.png"></a>
+                                <div style="margin-top:10px;"><p class="price">4999</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Матрас беспружинный Юпитер</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed6.png"></a>
+                                <div style="margin-top:10px;"><p class="price">14899</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Каркас кровати Сёгун</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed7.png"></a>
+                                <div style="margin-top:10px;"><p class="price">20299</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать с подъемным механизмом Невада</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed8.png"></a>
+                                <div style="margin-top:10px;"><p class="price">19499</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать без подъемного механизма Сноу</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                            <div class="catalogue-item">
+                                <a><img class="img" src="images/beds/bed9.png"></a>
+                                <div style="margin-top:10px;"><p class="price">24399</p><p class="money-symbol">₽</p></div>
+                                <p class="title">Кровать с подъемным механизмом Осень</p>
+                                <button onclick="addToCart(this)">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                <!--<div id="cabinets">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Шкафы и стеллажи</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="dressers">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Тумбы и комоды</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="decor">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Декор для дома</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="kitchen">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Каталог</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="tables">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Столы и стулья</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="carpets">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Ковры</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>
+                <div id="lights">
+                    <h1 class="main-heading" style="margin-left:5%; margin-bottom:-10px;">Освещение</h1>
+                        <div class="catalogue-grid">
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                            <div class="catalogue-block"></div>
+                        </div>
+                    </div>-->
+            </div>
+            <div class="sidearea" style="padding-top: 10px;">
+                <h2 class="main-heading" style="margin-left:-15px;">Категории</h2>
+                        <ul class="catalogue-list">
+                            <li><button onclick="catalogueSwitch('couches')">Диваны</button></li>
+                            <li><button onclick="catalogueSwitch('beds')">Кровати и матрасы</button></li>
+                            <li><button>Шкафы и стеллажи</button></l>
+                            <li><button>Тумбы и комоды</button></li>
+                            <li><button>Декор для дома</button></li>
+                            <li><button>Кухонные гарнитуры</button></li>
+                            <li><button>Столы и стулья</button></li>
+                            <li><button>Ковры</button></li>
+                            <li><button>Освещение</button></li>
+                        </ul>
+            </div>
+            <script src="main-script.js"></script>
+            <footer id="about">
+                <div class="footer-container">
+                    <div class="footer-element footer-aboutus">
+                        <h2>О нас</h2>
+                        <p>Мебельный магазин предлагает широкий ассортимент продукции для дома и офиса: от столов и стульев до шкафов и диванов.
+                            Здесь каждый может найти варианты на свой вкус, будь то классический стиль или современный дизайн.</p>
+                        <ul class="footer-buttons">
+                            <li><div class="socialbutton vk"><img style="z-index:1; position:relative;" src="images/vk.png" width="35" height="35"></div></li>
+                            <li><div class="socialbutton yt"><img style="z-index:1; position:relative;" src="images/yt.png" width="35" height="25"></div></li>
+                            <li><div class="socialbutton rd"><img style="z-index:1; position:relative;" src="images/rd.png" width="35" height="35"></div></li>
+                        </ul> 
+                                
+                    </div>
+                    <div class="footer-element footer-menu">
+                        <h2>Ссылки-меню</h2>
+                        <ul>
+                            <li><a href="index.html">Главная страница</a></li>
+                            <li><a href="aboutus.html">О нас</a></li>
+                            <li><a href="catalogue.html">Каталог</a>
+                            <li><a href="cart.html">Корзина</a></li>    
+                        </ul>
+                    </div>
+                    <div class="footer-element footer-menu">
+                        <h2>Каталог</h2>
+                        <ul>
+                            <li><a href="catalogue.html">Диваны и кресла</a></li>
+                            <li><a href="catalogue.html">Кровати и матрасы</a></li>
+                            <li><a href="catalogue.html">Шкафы и стеллажи</a></l>
+                            <li><a href="catalogue.html">Тумбы и комоды</a></li>
+                            <li><a href="catalogue.html">Сад и дача</a></li>
+                            <li><a href="catalogue.html">Мебель для офиса</a></li>
+                            <li><a href="catalogue.html">Кухонные гарнитуры</a></li>
+                            <li><a href="catalogue.html">Столы и стулья</a></li>
+                            <li><a href="catalogue.html">Ковры</a></li>
+                            <li><a href="catalogue.html">Освещение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-element footer-contacts">
+                        <h2>Контакты</h2>
+                        <ul class="contacts-info">
+                            <li>
+                                <img src="images/pin.png" width="25" height="25">
+                                <p>г.Москва, <br>проспект Вернадского,<br> д. 78</p>
+                            </li>
+                            <li>
+                                <img src="images/phone.png" width="25" height="25">
+                                <p><a href="tel:+79101715517">+7(910)171-55-17</a></p>
+                            </li>
+                            <li>
+                                <img src="images/email.png" width="25" height="25">
+                                <p><a href="mailto:mssp@yandex.ru">mssp@yandex.ru</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-copyright"><p>© Спиридонов Матвей Сергеевич [ИКБО-30-22]</p></div>
+        </main>
