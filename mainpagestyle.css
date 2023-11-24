@@ -1163,6 +1163,8 @@ footer{
     
 }
 @media (max-width:570px){
+    .main-heading{
+        padding:40px 10px 5px 10px;
     .i-changeimg{
         grid-column-gap: 25px;
     }
