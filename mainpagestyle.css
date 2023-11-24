@@ -1191,6 +1191,14 @@ footer{
         grid-template-columns: 125px 1fr;
         grid-template-rows:2fr 1190px 60px;
     }
+    .about-us-container{
+        padding-left:20px;
+        padding-right:0px;
+        padding-bottom:0px;
+        padding-top: 20px;
+        grid-template-columns: repeat(5,0.8fr);
+        grid-template-rows: repeat(5,70px);
+    }
     .catalogue-list button{
         font-size:14px;
     }
