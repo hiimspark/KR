@@ -592,6 +592,7 @@ footer{
     transition: transform 0.3s;
 }
 .catalogue-list{
+    margin-left:10px;
     display: flex;
     flex-direction: column;
     justify-content: right;
